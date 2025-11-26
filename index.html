@@ -1,54 +1,101 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio | Mora</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tol Mora | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-<header>
-  <nav class="navbar">
-    <h1 class="logo">Mora</h1>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Accueil</a></li>
-      <li><a href="a-propos.html">À propos</a></li>
-      <li><a href="projets.html">Projets</a></li>
-      <li><a href="certifications.html">Certifications</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Tol Mora</div>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About me</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-left">
-    <h1 class="title">
-      FUTUR <span>DATA ANALYST</span><br>
-      & DÉVELOPPEUR
-    </h1>
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="text-content">
+                <h1>ÉTUDIANT BTS SIO SLAM</h1>
+                [cite_start]<p class="subtitle">À la recherche d'un stage / d'une alternance en L3 MIAGE [cite: 14]</p>
+                <div class="actions">
+                    <a href="#contact" class="btn primary">Contactez-moi</a>
+                    <a href="CV - Tol Mora.pdf" download class="btn secondary">Télécharger CV ↓</a>
+                </div>
+            </div>
+            <div class="illustration">
+                <img src="assets/images/designer-illustration.png" alt="Creative Illustration">
+            </div>
+        </div>
+        <div class="scroll-down-indicator">↓</div>
+    </section>
 
-    <p class="subtitle">
-      Étudiant en BTS SIO • Passionné de Data • Ambition d'intégrer une équipe de F1 puis créer ma propre entreprise.
-    </p>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <div class="about-content">
+                <div class="text-block">
+                    [cite_start]<p>Actuellement en **BTS Services Informatiques aux Organisations (SLAM)**, je suis passionné par le développement d'applications[cite: 16, 17]. [cite_start]Mon parcours inclut des expériences en **fabrication de sites internet** (HTML/CSS) [cite: 28] [cite_start]et des bases solides en comptabilité et gestion[cite: 20, 29, 31].</p>
+                    [cite_start]<p>Je suis motivé à explorer de nouveaux domaines, notamment la cybersécurité, tout en poursuivant mon objectif d'intégrer une **L3 MIAGE**[cite: 14].</p>
+                    <a href="#certifications" class="read-more">Voir mes certifications...</a>
+                </div>
+                <div class="graphic-element">
+                    <img src="assets/images/about-graphic.png" alt="About graphic">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="hero-buttons">
-      <a href="contact.html" class="btn-primary">Me contacter</a>
-      <a href="assets/files/CV.pdf" class="btn-secondary">Télécharger CV ⬇</a>
-    </div>
-  </div>
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2>Mes Certifications</h2>
+            <div class="tabs-menu">
+                <button class="tab active">Première Année</button>
+                <button class="tab">Deuxième Année</button>
+                </div>
+            
+            <div class="certifications-grid">
+                <div class="cert-item first-year active-cert">
+                    <h3>Première Année</h3>
+                    <p>Je découvre les cours en ligne, les formations pratiques et la possibilité de me perfectionner dans différents domaines. C'est une nouvelle aventure qui me motive énormément.</p>
+                </div>
+                
+                <div class="cert-item second-year">
+                    <h3>Deuxième Année</h3>
+                    <p>Cette année, j’ai commencé à explorer la cybersécurité avec **TryHackMe**. J’ai acquis quelques bases et je compte poursuivre avec d’autres certifications pour renforcer mes compétences techniques et élargir mon profil professionnel.</p>
+                </div>
+                
+                <div class="cert-visuals">
+                                    </div>
 
-  <div class="hero-right">
-    <img src="assets/images/hero-illustration.png" alt="Illustration Mora" class="hero-img">
-  </div>
-</section>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>N'hésitez pas à me contacter pour toute opportunité de stage ou d'alternance.</p>
+            <ul>
+                [cite_start]<li><strong>Téléphone:</strong> 07 49 68 05 89 [cite: 2]</li>
+                [cite_start]<li><strong>Email:</strong> tolmora.pro@gmail.com [cite: 3]</li>
+                [cite_start]<li><strong>Adresse:</strong> 3, Sanguèze, Le Pallet, 44330 [cite: 4]</li>
+            </ul>
+        </div>
+    </section>
 
-<!-- SCROLL ICON -->
-<div class="scroll-down">
-  <span>↓</span>
-</div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tol Mora | Développé avec ☕ et HTML/CSS</p>
+        </div>
+    </footer>
 
 </body>
 </html>
