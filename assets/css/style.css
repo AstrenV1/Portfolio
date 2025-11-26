@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -6,82 +7,178 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f6f2e7; /* light cream */
-  color: #2a2a2a; 
+  background-color: #0f141b; /* deep modern dark */
+  color: #f2f2f2;
   line-height: 1.6;
 }
 
-/* 🔥 Deep Cream Header */
+/* ---------------------- */
+/*      NAVIGATION        */
+/* ---------------------- */
+
 header {
-  background: #e8dcc4; /* deep cream */
-  padding: 1rem 2rem;
+  width: 100%;
+  background: #0f141b;
+  padding: 1.5rem 4rem;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid #b02a2a; /* red Jordan accent */
 }
 
 .logo {
-  font-size: 1.5rem;
-  color: #b02a2a; /* Jordan red */
+  color: #ffffff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-nav ul {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
-nav ul li a {
-  color: #3c3c3c;
+.nav-links a {
   text-decoration: none;
-  transition: color 0.3s;
+  color: #cfd3d7;
   font-weight: 500;
+  transition: 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #b02a2a; /* red accent */
+.nav-links a:hover,
+.nav-links .active {
+  color: #2a9df4; /* Jordan blue */
 }
+
+/* ---------------------- */
+/*       HERO SECTION      */
+/* ---------------------- */
 
 .hero {
-  height: 80vh;
+  height: 90vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
+  justify-content: space-between;
+  padding: 4rem 7rem;
 }
 
-.hero h1 span {
-  color: #275fba; /* Jordan blue accent */
+.hero-left {
+  max-width: 50%;
 }
 
-.btn {
-  display: inline-block;
+.title {
+  font-size: 3.3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.title span {
+  color: #2a9df4; /* blue accent */
+}
+
+.subtitle {
   margin-top: 1rem;
-  padding: 0.6rem 1.2rem;
-  background-color: #b02a2a; /* red */
-  color: #fff;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+  color: #b8bec4;
+  font-size: 1.1rem;
+  max-width: 500px;
 }
 
-.btn:hover {
-  background-color: #8a1f1f; /* darker red */
+/* BUTTONS */
+.btn-primary,
+.btn-secondary {
+  padding: 0.7rem 1.5rem;
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
+
+.btn-primary {
+  background: #b02a2a; /* Jordan red */
+  color: #fff;
+  margin-right: 1rem;
+}
+
+.btn-primary:hover {
+  background: #851c1c;
+}
+
+.btn-secondary {
+  background: #1d242f;
+  color: #cfd3d7;
+  border: 1px solid #2a9df4;
+}
+
+.btn-secondary:hover {
+  background: #2a9df4;
+  color: #fff;
+}
+
+/* HERO IMAGE */
+.hero-right .hero-img {
+  width: 420px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* SCROLL ICON */
+.scroll-down {
+  text-align: center;
+  margin-top: -40px;
+}
+
+.scroll-down span {
+  font-size: 2rem;
+  color: #2a9df4;
+  animation: bounce 1.7s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+/* ---------------------- */
+/*        FOOTER          */
+/* ---------------------- */
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background: #e8dcc4; /* deep cream */
-  color: #4a4a4a;
-  margin-top: 2rem;
-  border-top: 2px solid #b02a2a;
+  padding: 1.5rem;
+  background: #0f141b;
+  color: #9aa1a7;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  margin-top: 3rem;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+/* ---------------------- */
+/*      RESPONSIVE        */
+/* ---------------------- */
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  .hero-left {
+    max-width: 100%;
+  }
+
+  .hero-right {
+    margin-top: 2rem;
+  }
 }
