@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique : Cloud & Green IT - Tol Mora</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #475569;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+        
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .text-gradient-green {
+            background: linear-gradient(to right, #10b981, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6', // blue-500
+                        secondary: '#64748b', // slate-500
+                        dark: '#0f172a', // slate-900
+                        emerald: '#10b981', // emerald-500
+                        amber: '#fbbf24', // amber-400
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark text-slate-300 antialiased selection:bg-emerald selection:text-white">
+
+    <nav class="fixed w-full z-50 top-0 bg-slate-900/90 backdrop-blur-md shadow-lg transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-white tracking-tight">TM<span class="text-emerald">.</span></a>
+            
+            <a href="index.html" class="flex items-center gap-2 text-sm font-medium hover:text-emerald transition-colors">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                Retour au Portfolio
+            </a>
+        </div>
+    </nav>
+
+    <header class="pt-32 pb-12 relative overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 w-96 h-96 bg-emerald/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <div class="inline-flex items-center gap-2 px-3 py-1 mb-6 text-xs font-medium tracking-wider text-emerald uppercase bg-emerald/10 rounded-full border border-emerald/20">
+                <i data-lucide="eye" class="w-3 h-3"></i> Veille Informatique
+            </div>
+            
+            <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
+                Infrastructure & <span class="text-gradient-green">Cloud Computing</span>
+            </h1>
+            
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed">
+                Impact environnemental, refroidissement des serveurs et optimisation du PUE dans les Data Centers.
+            </p>
+            
+            <div class="mt-6 flex items-center justify-center gap-3 text-sm text-slate-500">
+                <span class="w-8 h-px bg-slate-700"></span>
+                <span class="italic">Thème suivi depuis 2024</span>
+                <span class="w-8 h-px bg-slate-700"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-20">
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-8">
+            <div class="glass-card p-6 rounded-xl border-l-4 border-emerald">
+                <h3 class="text-white font-semibold mb-2 flex items-center gap-2">
+                    <i data-lucide="info" class="text-emerald w-4 h-4"></i> Détails de la Veille
+                </h3>
+                <ul class="space-y-3 text-sm">
+                    <li>
+                        <span class="block text-slate-500 text-xs">Thème</span>
+                        <span class="text-slate-200">Green IT & Cloud Infrastructure</span>
+                    </li>
+                    <li>
+                        <span class="block text-slate-500 text-xs">Outils utilisés</span>
+                        <span class="text-slate-200">Google Alerts, Flux RSS, Presse Spécialisée</span>
+                    </li>
+                    <li>
+                        <span class="block text-slate-500 text-xs">Fréquence d'actualisation</span>
+                        <span class="text-slate-200">Hebdomadaire</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-6 rounded-xl border-l-4 border-primary md:col-span-2">
+                <h3 class="text-white font-semibold mb-4 flex items-center gap-2">
+                    <i data-lucide="list" class="text-primary w-4 h-4"></i> Axes de recherche
+                </h3>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Nouvelles technologies de refroidissement (Liquid cooling, etc.)</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Optimisation du PUE (Power Usage Effectiveness)</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Mesure de l'empreinte carbone du Cloud</li>
+                    </ul>
+                    <ul class="space-y-2 text-sm text-slate-300">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Stratégies RSE des GAFAM et hébergeurs</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div> Réglementations et normes (Green AI)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section class="mb-8">
+            <div class="glass-card p-8 rounded-xl relative overflow-hidden">
+                <i data-lucide="cloud" class="absolute -right-4 -top-4 w-32 h-32 text-slate-800 opacity-50"></i>
+                <h2 class="text-2xl font-bold text-white mb-4 relative z-10">Contexte et Enjeux</h2>
+                <p class="leading-relaxed text-slate-300 relative z-10">
+                    À l'ère de l'intelligence artificielle et du Big Data, les centres de données (data centers) consomment des quantités astronomiques d'électricité et d'eau, principalement pour l'alimentation et le refroidissement des serveurs. 
+                </p>
+                <p class="leading-relaxed text-slate-300 mt-4 relative z-10">
+                    Cette veille technologique vise à suivre comment l'industrie de la tech tente d'atténuer cette empreinte écologique. De la conception de bâtiments éco-responsables à l'innovation dans les systèmes de refroidissement liquides, l'objectif est de comprendre les défis techniques d'une infrastructure numérique durable.
+                </p>
+            </div>
+        </section>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="glass-card p-8 rounded-xl">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="leaf" class="text-emerald"></i> Lien avec mon Projet
+                </h3>
+                <p class="text-slate-300 mb-4">
+                    En tant que futur développeur / Data Analyst, je serai amené à traiter d'importants volumes de données et à utiliser des services Cloud.
+                </p>
+                <p class="text-slate-300 text-sm border-l-2 border-slate-700 pl-4">
+                    Comprendre l'impact des infrastructures sous-jacentes est essentiel. Concevoir du code optimisé et choisir des hébergeurs responsables font désormais partie des compétences d'un informaticien moderne (Green IT).
+                </p>
+            </div>
+
+            <div class="glass-card p-8 rounded-xl">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="server" class="text-blue-400"></i> Les concepts clés
+                </h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start gap-3 text-slate-300">
+                        <i data-lucide="zap" class="w-5 h-5 text-amber mt-0.5"></i>
+                        <div>
+                            <strong class="text-white block">Le PUE</strong>
+                            <span class="text-sm">Indicateur mesurant l'efficacité énergétique d'un data center (plus il est proche de 1, mieux c'est).</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300">
+                        <i data-lucide="droplets" class="w-5 h-5 text-blue-400 mt-0.5"></i>
+                        <div>
+                            <strong class="text-white block">Liquid Cooling</strong>
+                            <span class="text-sm">Technologies de refroidissement par immersion ou par eau, bien plus efficaces que l'air.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="glass-card p-8 rounded-xl mb-12">
+            <div class="flex items-center gap-3 mb-8">
+                <div class="p-3 bg-blue-500/10 rounded-lg">
+                    <i data-lucide="bell-ring" class="text-primary w-6 h-6"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-white">Méthodologie & Automatisation</h2>
+                    <p class="text-slate-400 text-sm">Mise en place d'alertes automatisées pour la collecte d'informations.</p>
+                </div>
+            </div>
+
+            <div class="space-y-12">
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                        <i data-lucide="search" class="w-4 h-4 text-emerald"></i> 
+                        Requête : <span class="font-mono text-emerald/90 bg-emerald/10 px-2 py-1 rounded text-sm">"server cooling technology" OR "PUE" "data center"</span>
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-4">Suivi ciblé sur les innovations matérielles et l'efficacité énergétique.</p>
+                    
+                    <div class="relative group max-w-3xl mx-auto">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-primary to-emerald rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                        <img src="assets/images/alert1.png" 
+                             alt="Google Alert - Cooling Technology"
+                             class="relative rounded-lg shadow-2xl border border-slate-700 w-full h-auto transform transition-transform group-hover:scale-[1.01]" 
+                             onerror="this.src='https://placehold.co/800x400/1e293b/white?text=Capture+Google+Alert+1'"/>
+                    </div>
+                </div>
+
+                <hr class="border-slate-800">
+
+                <div>
+                    <h3 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
+                        <i data-lucide="search" class="w-4 h-4 text-primary"></i> 
+                        Requête : <span class="font-mono text-primary/90 bg-primary/10 px-2 py-1 rounded text-sm">"green data center" OR "cloud carbon footprint"</span>
+                    </h3>
+                    <p class="text-slate-400 text-sm mb-4">Surveillance globale de l'empreinte carbone et des initiatives d'infrastructure verte.</p>
+                    
+                    <div class="relative group max-w-3xl mx-auto">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-primary to-emerald rounded-lg blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                        <img src="assets/images/alert2.png" 
+                             alt="Google Alert - Green Data Center"
+                             class="relative rounded-lg shadow-2xl border border-slate-700 w-full h-auto transform transition-transform group-hover:scale-[1.01]" 
+                             onerror="this.src='https://placehold.co/800x400/1e293b/white?text=Capture+Google+Alert+2'"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="py-8 border-t border-slate-800 text-center text-slate-500 text-sm bg-dark">
+        <p>&copy; 2025 Tol Mora. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
